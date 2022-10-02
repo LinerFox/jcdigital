@@ -2,8 +2,8 @@
 :root {
   --font-primary: "Quicksand", sans-serif;
   --font-secondary: "Playfair Display", serif;
-  --text-color: #fff;
-  --secondary-text-color: #f71404;
+  --text-color: rgba(255, 255, 255, 0.788);
+  --secondary-text-color: #00d8ff;
 }
 
 /* Base */
@@ -118,4 +118,82 @@ body::-webkit-scrollbar {
 .show__menu {
   top: 0;
   right: 0;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #333;
+  position: relative;
+  z-index: -1;
+  padding: 6rem 0rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  background: -webkit-linear-gradient(
+    360deg,
+    var(--secondary-text-color) 0%,
+    var(--secondary-text-color) 25%,
+    var(--secondary-text-color) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+
+.hero h2 {
+  font-family: var(--font-primary);
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 767px) {
+  /* Base */
+  .container,
+  .container-md {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Header */
+  .nav {
+    height: 5rem;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  /* Hero */
+  .hero {
+    display: block;
+    padding: 13rem 0;
+  }
+  .hero p {
+    font-size: 1rem;
+    text-align: justify;
+  }
 }
