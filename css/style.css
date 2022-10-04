@@ -264,6 +264,105 @@ body::-webkit-scrollbar {
   color: var(--text-color);
 }
 
+/* Education */
+.education {
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.education h3 {
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.accordion__education {
+  position: relative;
+  width: 100%;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
+
+.accordion__education section {
+  display: block;
+  width: 100%;
+  left: 0;
+}
+
+.accordion__education section input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+}
+
+.accordion__education section input[name="sections"]:checked + label {
+  background-color: #2d2d2d;
+  border: 2px solid var(--text-color);
+}
+
+.accordion__education section input[name="sections"]:checked ~ article {
+  display: block;
+}
+
+.accordion__education section label {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  font-weight: 300;
+  cursor: pointer;
+  display: block;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  padding: 1rem 0.83rem;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  border: 2px solid #2d2d2d;
+}
+
+.accordion__education section article {
+  display: none;
+  left: 0;
+  width: 100%;
+  position: relative;
+  top: 0;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  line-height: 1.7;
+  padding: 2rem 0;
+}
+
+.accordion__education section article ul li {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--text-color);
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.accordion__education section article > p {
+  color: var(--secondary-text-color);
+  font-weight: 300;
+  font-size: 14px;
+  margin: 16px 0px 16px 0px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.accordion__education section article::after {
+  background-color: transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: -229;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index: 1;
+}
+
+.title__education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* PROJECT */
 .featured__project .container__md hr {
   border-color: #00d8ff;
@@ -315,6 +414,55 @@ body::-webkit-scrollbar {
 .box__featured_projects .project .p_tech {
   color: #00d8ff;
 }
+
+/* FOOTER */
+footer {
+  padding: 40px 0px 60px 0px;
+}
+#contact .container__md hr {
+  border-color: #00d8ff;
+}
+footer .container__md h3 {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 80%;
+}
+
+footer .box__contact {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px 20px;
+}
+
+.box__contact .contact {
+  padding: 12px 18px;
+  justify-content: center;
+  border-radius: 4px;
+  border-image-slice: 1;
+  background-color: transparent;
+}
+.box__contact .contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+i.ri-mail-fill,
+i.ri-linkedin-fill,
+i.ri-twitter-fill,
+i.ri-github-fill {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00d8ff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+/* MEDIA QUERIES */
 @media screen and (min-width: 767px) {
   /* Base */
   .container,
@@ -351,7 +499,7 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     text-align: justify;
   }
-  /* EXPERIENCE */
+  /* education */
   .accordion__experience {
     width: 100%;
     color: var(--secondary-text-color);
