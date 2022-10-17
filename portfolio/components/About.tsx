@@ -29,8 +29,8 @@ function About({}: Props) {
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
           Here is a{" "}
-          <span className='underline decoration-[#ff0000]'>little</span>
-          background
+          <span className='underline decoration-[#ff0000]'>little</span>&nbsp;
+          background about me
         </h4>
         <p className='text-base'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
