@@ -22,20 +22,29 @@ function Contact({}: Props) {
             Let&apos;s Talk
           </span>
         </h4>
-        <div>
+        <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
-            <PhoneIcon className='w-7 h-7 text-[#4564f0]' />
-            <p>+1-813-861-3250</p>
+            <PhoneIcon className='w-7 h-7 text-[#4564f0] animate-pulse' />
+            <p className='text-2xl'>+1-813-861-3250</p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
-            <EnvelopeOpenIcon className='w-7 h-7 text-[#4564f0]' />
-            <p>karkinoscode@gmail.com</p>
+            <EnvelopeOpenIcon className='w-7 h-7 text-[#4564f0] animate-pulse' />
+            <p className='text-2xl'>karkinoscode@gmail.com</p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
-            <PhoneIcon className='w-7 h-7 text-[#4564f0]' />
-            <p>+1-813-861-3250</p>
+            <MapPinIcon className='w-7 h-7 text-[#4564f0] animate-pulse' />
+            <p className='text-2xl'>Florida, USA</p>
           </div>
         </div>
+        <form className='flex flex-col space-y-2 w-fit mx-auto'>
+          <div className='flex space-x-2'>
+            <input className='contactInput' type='text' />
+            <input className='contactInput' type='text' />
+          </div>
+          <input className='contactInput' type='text' />
+          <textarea className='contactInput' />
+          <button className=''>Submit</button>
+        </form>
       </div>
     </div>
   );
