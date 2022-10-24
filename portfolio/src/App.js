@@ -1,19 +1,14 @@
-import './App.scss'
-
-import { Route, Routes } from 'react-router-dom'
-
-import React from 'react'
-
-// import logo from './Assets/images/Logo.png'
-
-function App() {
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import React from "react";
+const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-      </Routes>
-    </>
-  )
-}
+    <div>
+      <Header />
+      <Hero />
+      <div style={{ height: "1000px" }}></div>
+    </div>
+  );
+};
 
-export default App
+export default App;
