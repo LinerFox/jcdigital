@@ -1,13 +1,14 @@
 import About from "./components/About";
-import Brands from "./components/Brands";
+// import Brands from "./components/Brands";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import React from "react";
-import Services from "./components/Services";
+// import Services from "./components/Services";
 import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const App = () => {
       {/* <Services /> */}
       {/* <Testimonials /> */}
       <Contact />
+      <Footer />
     </div>
   );
 };

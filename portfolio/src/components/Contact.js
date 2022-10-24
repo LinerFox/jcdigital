@@ -19,11 +19,14 @@ const Contact = () => {
         </div>
         <div className='flex flex-col lg:gap-x-8 lg:flex-row'>
           {/* Info */}
-          <div className='flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2'>
+          <div className='flex flex-1 flex-col items-center space-y-8 mb-12 lg:mb-0 lg:pt-2'>
             {contact.map((item, index) => {
               const { icon, title, subtitle, description } = item;
               return (
-                <div className='flex flex-col lg:flex-row gap-x-4' key={index}>
+                <div
+                  className='flex flex-col items-center text-center lg:flex-row gap-x-4'
+                  key={index}
+                >
                   <div className='text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
                     {icon}
                   </div>
@@ -37,7 +40,7 @@ const Contact = () => {
             })}
           </div>
           {/* Form */}
-          <form className='space-y-8 w-full max-w-[780px]'>
+          {/* <form className='space-y-8 w-full max-w-[780px]'>
             <div className='flex gap-8'>
               <input type='text' className='input' placeholder='Your Name' />
               <input type='email' className='input' placeholder='Your Email' />
@@ -50,7 +53,7 @@ const Contact = () => {
             <button className='btn btn-lg bg-accent hover:bg-accent-hover'>
               Send Message
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </section>
