@@ -1,4 +1,5 @@
 import Image from "../assets/img/HeroImg.png";
+import { Link } from "react-scroll";
 import React from "react";
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
               innovative features that the originals do not have.
             </p>
             <button className='btn btn-md bg-accent rounded-lg hover:bg-accent-hover md:btn-lg transition-all'>
-              Work with me
+              <Link>
+                <a href='#contact'>Work with me</a>
+              </Link>
             </button>
           </div>
           {/* Right Side */}
