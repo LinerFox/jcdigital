@@ -1,5 +1,4 @@
 import Image from "../assets/img/HeroImg.png";
-import { Link } from "react-scroll";
 import React from "react";
 const Hero = () => {
   return (
@@ -19,11 +18,6 @@ const Hero = () => {
               I'm constantly building new projects and clones of websites with
               innovative features that the originals do not have.
             </p>
-            <button className='btn btn-md bg-accent rounded-lg hover:bg-accent-hover md:btn-lg transition-all'>
-              <Link>
-                <a href='#contact'>Work with me</a>
-              </Link>
-            </button>
           </div>
           {/* Right Side */}
           <div className='hidden lg:flex flex-1 justify-end items-end md:items-center lg:items-center h-full'>

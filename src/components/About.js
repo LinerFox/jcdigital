@@ -28,9 +28,6 @@ const About = () => {
                 and ReactJS application design.
               </p>
             </div>
-            <button className='btn btn-md bg-accent hover:bg-accent-hover transition-all'>
-              Contact Me
-            </button>
           </div>
         </div>
       </div>
