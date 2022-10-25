@@ -1,15 +1,12 @@
 //  icons
 import {
-  FiDribbble,
   FiGithub,
-  FiInstagram,
   FiLayout,
   FiMail,
   FiMapPin,
   FiPenTool,
   FiSettings,
   FiTag,
-  FiYoutube,
 } from "react-icons/fi";
 
 import BehanceBrandIcon from "./assets/img/brands/behance.png";
