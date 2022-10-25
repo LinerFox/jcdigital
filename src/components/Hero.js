@@ -15,9 +15,8 @@ const Hero = () => {
               I Build & Design <br /> Web Interfaces.
             </h1>
             <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left '>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-              qui delectus eligendi fugiat esse iste dolorem nobis accusantium
-              nemo maxime.
+              I'm constantly building new projects and clones of websites with
+              innovative features that the originals do not have.
             </p>
             <button className='btn btn-md bg-accent rounded-lg hover:bg-accent-hover md:btn-lg transition-all'>
               Work with me

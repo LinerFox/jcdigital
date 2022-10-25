@@ -10,12 +10,7 @@ const Contact = () => {
           <h2 className='section-title before:content-services relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
             Contact Me
           </h2>
-          <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt
-            nihil id enim facilis dolores sapiente nostrum autem, placeat est
-            veritatis facere a reprehenderit natus fuga ad repellat perspiciatis
-            nobis.
-          </p>
+          <p className='subtitle'>I'm always happy to help out!</p>
         </div>
         <div className='flex flex-col lg:gap-x-8 lg:flex-row'>
           {/* Info */}

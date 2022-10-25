@@ -19,9 +19,13 @@ const About = () => {
               <p className='mb-4 text-accent'>Web Developer & Designer</p>
               <hr className='mb-8 opacity-5' />
               <p className='mb-8'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos amet magnam necessitatibus iusto excepturi
-                distinctio assumenda molestias numquam quod dicta!
+                I'm a self taught developer who specializes in Javascript
+                Development. I work with ReactJS, NextJS, Angular and various
+                Databases to provide a near seamless experience with a dynamic
+                update. I started my programming journey in 2014 when I first
+                started learning Python to attempt to create my own tools for
+                Blender. I've since moved forward to frontend design, web design
+                and ReactJS application design.
               </p>
             </div>
             <button className='btn btn-md bg-accent hover:bg-accent-hover transition-all'>
