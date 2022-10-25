@@ -157,13 +157,13 @@ export const projectsNav = [
     name: "all",
   },
   {
-    name: "UI/UX Design",
+    name: "Javascript",
   },
   {
-    name: "web development",
+    name: "Web Development",
   },
   {
-    name: "branding",
+    name: "Backend Projects",
   },
 ];
 
@@ -254,7 +254,7 @@ export const contact = [
     icon: <FiMail />,
     title: "Have a question?",
     subtitle: "I am here to help you.",
-    description: "Email me at hello@youremail.com",
+    description: "Email me at karkinoscode@gmail.com",
   },
   {
     icon: <FiMapPin />,
