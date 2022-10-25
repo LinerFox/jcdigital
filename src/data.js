@@ -69,22 +69,22 @@ export const navigation = [
 
 // social
 export const social = [
-  {
-    icon: <FiYoutube />,
-    href: "",
-  },
-  {
-    icon: <FiInstagram />,
-    href: "",
-  },
+  // {
+  //   icon: <FiYoutube />,
+  //   href: "",
+  // },
+  // {
+  //   icon: <FiInstagram />,
+  //   href: "",
+  // },
   {
     icon: <FiGithub />,
-    href: "",
+    href: "http://www.github.com/LinerFox",
   },
-  {
-    icon: <FiDribbble />,
-    href: "",
-  },
+  // {
+  //   icon: <FiDribbble />,
+  //   href: "",
+  // },
 ];
 
 // companies
