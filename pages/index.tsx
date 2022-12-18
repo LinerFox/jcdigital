@@ -9,7 +9,6 @@ const Home: NextPage = () => {
         <title>Joseph Chu</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      {/* Header */}
       <Header />
       {/* Hero */}
       {/* About */}
