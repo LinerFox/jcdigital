@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
@@ -7,7 +8,7 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skillset from "../components/Skillset";
 import WorkExperience from "../components/WorkExperience";
-
+import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid";
 const Home: NextPage = () => {
   return (
     <div className='bg-[#2e2e2e] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
@@ -36,6 +37,13 @@ const Home: NextPage = () => {
       <section id='contact' className='snap-start'>
         <Contact />
       </section>
+      <Link href='#hero'>
+        <footer className='sticky bottom-5 w-full cursor-pointer'>
+          <div className='flex items-center justify-center'>
+            <ChevronDoubleUpIcon className='w-8 h-8' />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };
