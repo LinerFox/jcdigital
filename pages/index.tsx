@@ -10,7 +10,7 @@ import WorkExperience from "../components/WorkExperience";
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[#2e2e2e] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[#2e2e2e] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
       <Head>
         <title>Joseph Chu</title>
       </Head>
