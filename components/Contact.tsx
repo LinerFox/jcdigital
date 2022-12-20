@@ -30,18 +30,22 @@ export default function Contact({}: Props) {
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>+1-813-861-3250</p>
+            <p className='text-2xl'>
+              <a href='tel:+1-813-861-3250'>+1-813-861-3250</a>
+            </p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
             <EnvelopeIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>karkinoscode@gmail.com</p>
+            <p className='text-2xl'>
+              <a href='mailto:karkinoscode@gmail.com'>karkinoscode@gmail.com</a>
+            </p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
             <MapPinIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
             <p className='text-2xl'>Orlando, Fl</p>
           </div>
         </div>
-        <form
+        {/* <form
           onSubmit={handleSubmit(onSubmit)}
           className='flex flex-col space-y-2 w-fit mx-auto'
         >
@@ -73,7 +77,7 @@ export default function Contact({}: Props) {
           <button className='bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg'>
             Submit
           </button>
-        </form>
+        </form> */}
       </div>
     </div>
   );
