@@ -117,6 +117,61 @@ input {
 /*================ REUSABLE CSS CLASSES ================*/
 
 /*================ SIDEBAR ================*/
+.sidebar {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  background-color: var(--body-color);
+  border-right: 1px solid var(--box-color);
+}
+
+.nav__logo {
+  position: absolute;
+  top: 1.8rem;
+  right: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--skin-color);
+  text-align: center;
+  margin: auto;
+}
+
+.nav__logo-text {
+  font-size: 1.125rem;
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+  line-height: 40px;
+}
+
+.nav__menu {
+  position: fixed;
+  transform-origin: left top;
+  transform: rotate(-90deg) translateX(-100%);
+  width: 100vh;
+}
+
+.menu {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: -2px auto 0 auto;
+}
+
+.nav__link {
+  height: 100%;
+  line-height: 100px;
+  padding: 0 1rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  position: relative;
+}
+
+/* Active Link */
 
 /*================ MAIN ================*/
 
@@ -124,4 +179,4 @@ input {
 
 /*===== BUTTONS ===== */
 
-/*===== ABOUT SECTION ===== */
+/*===== ABOUT SECTION ===== */ ;
