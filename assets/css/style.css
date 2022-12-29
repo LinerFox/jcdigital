@@ -550,6 +550,7 @@ input {
 .skills__percentage {
   height: 5px;
   border-radius: 0.5rem;
+  margin-bottom: var(--mb-2);
 }
 
 .skills__bar {
