@@ -22,3 +22,42 @@ tabs.forEach((tab) => {
     tab.classList.add("skills__active");
   });
 });
+
+/*================= MIXITUP FILTER =================*/
+let mixerPortfolio = mixitup(".work__container", {
+  selectors: { target: ".work__card" },
+  animation: { duration: 300 },
+});
+
+/*================= Link Active Work =================*/
+const linkWork = document.querySelectorAll(".work__item");
+function activeWork() {
+  linkWork.forEach((link) => link.classList.remove("active-work"));
+  this.classList.add("active-work");
+}
+linkWork.forEach((link) => link.addEventListener("click", activeWork));
+
+/*================= PORTFOLIO MODAL =================*/
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("work__button")) {
+    togglePortfolioModal();
+    portfolioItemDetails(e.target.parentElement);
+  }
+});
+
+function togglePortfolioModal() {
+  document.querySelector(".portfolio__modal").classList.toggle("open");
+}
+
+document
+  .querySelector(".portfolio__modal-close")
+  .addEventListener("click", togglePortfolioModal);
+
+function portfolioItemDetails(portfolioItem) {
+  document.querySelector(".pm__thumbnail img").src =
+    portfolioItem.querySelector(".work__img").src;
+  document.querySelector(".portfolio__modal-subtitle span").innerHTML =
+    portfolioItem.querySelector(".work__title").innerHTML;
+  document.querySelector(".portfolio__modal-body").innerHTML =
+    portfolioItem.querySelector(".portfolio__item-details").innerHTML;
+}
