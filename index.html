@@ -18,6 +18,9 @@
 
     <body>
         <!--================ SIDEBAR ================-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-bars"></i>
+        </div>
         <aside class="sidebar" id="sidebar">
             <nav class="nav">
                 <div class="nav__logo">
@@ -39,16 +42,16 @@
                             <li class="nav__item">
                                 <a href="#work" class="nav__link">Work</a>
                             </li>
-                            <li class="nav__item">
+                            <!-- <li class="nav__item">
                                 <a href="#services"
                                     class="nav__link">Services</a>
-                            </li>
+                            </li> -->
                             <li class="nav__item">
                                 <a href="#blog" class="nav__link">Blog</a>
                             </li>
-                            <li class="nav__item">
+                            <!-- <li class="nav__item">
                                 <a href="#contact" class="nav__link">Contact</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -56,6 +59,9 @@
                     <i class="uil uil-share-alt social__share">
 
                     </i>
+                </div>
+                <div class="nav__close" id="nav-close">
+                    <i class="uil uil-times"></i>
                 </div>
             </nav>
         </aside>
@@ -72,9 +78,8 @@
                                     class="uil uil-linkedin-alt"></i></a>
                         </div>
                     </div>
-
-                    <img src="/assets/images/HeroImage.png" alt=""
-                        class="home__img">
+                    <img src="/assets//images/HeroImage2.png" class="home__img"
+                        alt="">
                     <div class="home__data">
                         <h1 class="home__title">Hey, I'm Joe</h1>
                         <h3 class="home__subtitle">
@@ -122,9 +127,10 @@
             <section class="about section" id="about">
                 <h2 data-heading="My Intro" class="section__title">About Me</h2>
                 <div class="about__container container grid">
-                    <img src="assets/images/Me.png" alt="Me" class="about__img">
+                    <img src="assets/images/HeroImage2.png" alt="Me"
+                        class="about__img">
                     <div class="about__data">
-                        <h3 class="about__heading">Hey! I'm Joe from the USA
+                        <h3 class="about__heading">Hey from the USA!
                         </h3>
                         <p class="about__description">I'm a Web Developer and
                             Cybersecurity Enthusiast at this point in my career!
@@ -136,14 +142,14 @@
                             <div class="about__box">
                                 <i class="uil uil-award-alt about__icon"></i>
                                 <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">8 + years</span>
+                                <span class="about__subtitle">1 + years</span>
                             </div>
                             <div class="about__box">
                                 <i
                                     class="uil uil-briefcase-alt about__icon"></i>
                                 <h3 class="about__title">Completed</h3>
                                 <span class="about__subtitle">20 +
-                                    Projects</span>
+                                    Personal Projects</span>
                             </div>
                             <div class="about__box">
                                 <i
@@ -152,9 +158,6 @@
                                 <span class="about__subtitle">Online 24/7</span>
                             </div>
                         </div>
-                        <a href="#contact" class="button"><i
-                                class="uil uil-navigator button__icon"></i>Contact
-                            Me</a>
                     </div>
                 </div>
             </section>
@@ -278,14 +281,14 @@
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
-                        <div class="skills__header" data-target="#designer">
+                        <!-- <div class="skills__header" data-target="#designer">
                             <i class="uil uil-swatchbook skills__icon"></i>
                             <div>
                                 <h1 class="skills__title">3D Designer</h1>
                                 <span class="skills__subtitle">2 years</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
+                        </div> -->
                         <div class="skills__header" data-target="#blueteam">
                             <i
                                 class="uil uil-shield-exclamation skills__icon"></i>
@@ -442,8 +445,8 @@
                     <span class="work__item active-work"
                         data-filter="all">All</span>
                     <span class="work__item" data-filter=".web">Web</span>
-                    <span class="work__item" data-filter=".art">3D</span>
                     <span class="work__item" data-filter=".app">App</span>
+                    <span class="work__item" data-filter=".lab">Lab</span>
                 </div>
                 <div class="work__container container grid">
                     <div class="work__card mix web">
@@ -494,7 +497,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="work__card mix art">
+                    <div class="work__card mix lab">
                         <img src="./assets/images/HeroImage2.png"
                             alt="work 1 image" class="work__img">
                         <h3 class="work__title">Web Design</h3>
@@ -560,7 +563,7 @@
                 </div>
             </div>
             <!--================ SERVICES ================-->
-            <section class="services__section section" id="services">
+            <!-- <section class="services__section section" id="services">
                 <h2 data-heading="Services" class="section__title">What I Can
                     Offer</h2>
                 <div class="services__container container grid">
@@ -695,7 +698,7 @@
                     </div>
                 </div>
                 </div>
-            </section>
+            </section> -->
             <!--================ TESTIMONIALS ================-->
             <!--================ CONTACT ================-->
         </main>
